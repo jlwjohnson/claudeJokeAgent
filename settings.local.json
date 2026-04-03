@@ -1,0 +1,41 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(uvicorn app:app --reload --host 0.0.0.0 --port 8000)",
+      "Bash(curl -s -X POST http://localhost:8000/joke -H \"Content-Type: application/json\" -d '{\"\"\"\"joke_type\"\"\"\": \"\"\"\"dad\"\"\"\"}')",
+      "Bash(python3 -m json.tool)",
+      "Bash(python3 -m uvicorn --version)",
+      "Bash(pip3 install:*)",
+      "Bash(python3 -m uvicorn app:app --host 0.0.0.0 --port 8000)",
+      "Bash(curl -s http://localhost:8000/health)",
+      "Bash(curl -s -X POST http://localhost:8000/joke -H \"Content-Type: application/json\" -d '{\"\"joke_type\"\": \"\"dad\"\"}')",
+      "Bash(brew list:*)",
+      "Bash(brew install:*)",
+      "Bash(curl -s https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-darwin-arm64.zip -o /tmp/ngrok.zip)",
+      "Bash(unzip -o /tmp/ngrok.zip -d /usr/local/bin/)",
+      "Bash(unzip -o /tmp/ngrok.zip -d /tmp/)",
+      "Read(//tmp/**)",
+      "Bash(/tmp/ngrok http:*)",
+      "Bash(/tmp/ngrok config:*)",
+      "Bash(curl -s -X POST https://untransitionally-hardscrabble-kasen.ngrok-free.dev/joke -H \"Content-Type: application/json\" -H \"ngrok-skip-browser-warning: true\" -d '{\"\"joke_type\"\": \"\"animal\"\"}')",
+      "Bash(curl -s -X POST http://localhost:8000/joke -H \"Content-Type: application/json\" -d '{\"\"joke_type\"\": \"\"animal\"\"}')",
+      "Bash(curl -s \"http://localhost:8000/joke?joke_type=kid\")",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(curl -s \"http://localhost:4040/api/tunnels\")",
+      "Bash(curl -s \"http://localhost:8000/joke?joke_type=dad\")",
+      "Bash(curl -s http://localhost:4040/api/tunnels)",
+      "Bash(curl -sv \"https://untransitionally-hardscrabble-kasen.ngrok-free.dev/joke?joke_type=dad\" -H \"ngrok-skip-browser-warning: true\")",
+      "Bash(while true:*)",
+      "Bash(do curl:*)",
+      "Bash(done)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(d[''''tunnels''''][0][''''public_url'''']\\)\")",
+      "Bash(git push:*)",
+      "Bash(gh pr:*)",
+      "Read(//usr/local/bin/**)",
+      "Read(//opt/homebrew/Cellar/gh/2.88.1/bin/**)",
+      "Read(//usr/**)",
+      "Bash(/opt/homebrew/bin/gh pr:*)"
+    ]
+  }
+}
